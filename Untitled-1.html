@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeoRe: La apuesta silenciosa que hizo subir 852% una acción minera en el Biobío</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #f4f1ea;
+    --gold: #b8860b;
+    --gold-light: #d4a017;
+    --rust: #8b3a0f;
+    --slate: #2c3e50;
+    --muted: #6b6459;
+    --rule: #c5b99a;
+    --accent: #1a3a5c;
+    --danger: #8b1a1a;
+    --green-dim: #1e4022;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  /* ─── MASTHEAD ─── */
+  .masthead {
+    background: var(--ink);
+    color: var(--paper);
+    text-align: center;
+    padding: 18px 40px 14px;
+    border-bottom: 3px solid var(--gold);
+  }
+  .masthead .pub-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 4px;
+  }
+  .masthead .date-line {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: #888;
+    letter-spacing: 0.1em;
+  }
+
+  /* ─── CONTAINER ─── */
+  .wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 56px 0 36px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero .kicker {
+    font-family: 'Space Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+    display: block;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.12;
+    color: var(--ink);
+    margin-bottom: 22px;
+    letter-spacing: -0.02em;
+  }
+  .hero .deck {
+    font-size: 1.18rem;
+    font-style: italic;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 28px;
+    border-left: 3px solid var(--gold);
+    padding-left: 18px;
+  }
+  .hero .byline-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .hero .byline-row span + span::before {
+    content: '·';
+    margin-right: 24px;
+  }
+
+  /* ─── PULL QUOTE BOX ─── */
+  .pull-quote {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 28px 32px;
+    margin: 48px 0;
+    position: relative;
+  }
+  .pull-quote::before {
+    content: '"';
+    font-family: 'Playfair Display', serif;
+    font-size: 120px;
+    color: var(--gold);
+    opacity: 0.3;
+    position: absolute;
+    top: -20px;
+    left: 14px;
+    line-height: 1;
+  }
+  .pull-quote p {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+  }
+  .pull-quote .attribution {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 14px;
+    display: block;
+  }
+
+  /* ─── ARTICLE BODY ─── */
+  .article-body {
+    padding: 48px 0;
+  }
+  .article-body p {
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+  }
+  .article-body p:first-child::first-letter {
+    font-family: 'Playfair Display', serif;
+    font-size: 5.5rem;
+    font-weight: 900;
+    float: left;
+    line-height: 0.75;
+    margin-right: 10px;
+    margin-top: 12px;
+    color: var(--gold);
+  }
+
+  /* ─── SECTION HEADERS ─── */
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 54px 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--rule);
+    letter-spacing: -0.01em;
+  }
+
+  /* ─── RULE ─── */
+  .ornament {
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.2rem;
+    letter-spacing: 0.5em;
+    margin: 48px 0;
+  }
+
+  /* ─── STAT BOX ─── */
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2px;
+    background: var(--rule);
+    border: 2px solid var(--ink);
+    margin: 36px 0;
+  }
+  .stat-item {
+    background: var(--paper);
+    padding: 20px 18px;
+    text-align: center;
+  }
+  .stat-item .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    display: block;
+  }
+  .stat-item .stat-num.danger { color: var(--danger); }
+  .stat-item .stat-num.green { color: var(--green-dim); }
+  .stat-item .stat-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9.5px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 4px;
+    display: block;
+  }
+
+  /* ─── TIMELINE ─── */
+  .timeline {
+    margin: 48px 0;
+    position: relative;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 110px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold), var(--rule));
+  }
+  .timeline-item {
+    display: flex;
+    gap: 0;
+    margin-bottom: 6px;
+    align-items: flex-start;
+  }
+  .tl-date {
+    width: 100px;
+    flex-shrink: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: var(--gold);
+    font-weight: 700;
+    text-align: right;
+    padding-right: 14px;
+    padding-top: 14px;
+    letter-spacing: 0.06em;
+    line-height: 1.3;
+  }
+  .tl-dot {
+    width: 18px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
+  }
+  .tl-dot::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+    border: 2px solid var(--paper);
+    box-shadow: 0 0 0 2px var(--gold);
+  }
+  .tl-content {
+    flex: 1;
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 13px 16px;
+    margin-left: 18px;
+    margin-bottom: 4px;
+  }
+  .tl-content strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--ink);
+    display: block;
+    margin-bottom: 3px;
+  }
+  .tl-content p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.5;
+    margin: 0;
+  }
+  .tl-content p::first-letter { font-size: inherit; float: none; }
+  .tl-content .stock-tag {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-top: 5px;
+    font-weight: 700;
+  }
+  .tl-content .stock-up { background: #e8f5e9; color: #1b5e20; }
+  .tl-content .stock-key { background: #fff3e0; color: #e65100; }
+
+  /* ─── TABLES ─── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 32px 0;
+    font-size: 0.88rem;
+  }
+  .data-table thead tr {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .data-table thead th {
+    font-family: 'Space Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 11px 14px;
+    text-align: left;
+    font-weight: 400;
+  }
+  .data-table thead th.gold { color: var(--gold-light); }
+  .data-table tbody tr {
+    border-bottom: 1px solid var(--rule);
+    transition: background 0.15s;
+  }
+  .data-table tbody tr:hover { background: #ece9e0; }
+  .data-table tbody tr:nth-child(even) { background: #f9f7f2; }
+  .data-table tbody tr:nth-child(even):hover { background: #ece9e0; }
+  .data-table td {
+    padding: 10px 14px;
+    color: var(--ink);
+    vertical-align: top;
+    line-height: 1.45;
+  }
+  .data-table td.mono {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--accent);
+  }
+  .data-table td.up { color: #1b5e20; font-weight: 700; }
+  .data-table td.down { color: var(--danger); font-weight: 700; }
+  .table-title {
+    font-family: 'Space Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+    padding-top: 32px;
+    display: block;
+  }
+
+  /* ─── INFO BOX ─── */
+  .info-box {
+    border-left: 4px solid var(--gold);
+    background: #faf6ed;
+    padding: 20px 22px;
+    margin: 32px 0;
+  }
+  .info-box .label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+    display: block;
+  }
+  .info-box p {
+    font-size: 0.92rem;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.65;
+  }
+  .info-box p + p { margin-top: 10px; }
+  .info-box p::first-letter { font-size: inherit; float: none; }
+
+  /* ─── WARNING BOX ─── */
+  .warn-box {
+    border-left: 4px solid var(--danger);
+    background: #fff5f5;
+    padding: 20px 22px;
+    margin: 32px 0;
+  }
+  .warn-box .label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--danger);
+    margin-bottom: 8px;
+    display: block;
+  }
+  .warn-box p {
+    font-size: 0.92rem;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.65;
+  }
+  .warn-box p::first-letter { font-size: inherit; float: none; }
+
+  /* ─── CRONOGRAM ─── */
+  .crono-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 2px solid var(--ink);
+    margin: 32px 0;
+  }
+  .crono-header {
+    background: var(--ink);
+    color: var(--gold);
+    padding: 12px 18px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .crono-item {
+    display: grid;
+    grid-template-columns: 120px 80px 1fr;
+    border-bottom: 1px solid var(--rule);
+  }
+  .crono-item:last-child { border-bottom: none; }
+  .crono-period {
+    background: var(--paper);
+    padding: 12px 14px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9.5px;
+    color: var(--gold);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    border-right: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+  }
+  .crono-stage {
+    background: #f9f7f2;
+    padding: 12px 12px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-right: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+  }
+  .crono-desc {
+    padding: 12px 14px;
+    font-size: 0.83rem;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .crono-desc::first-letter { font-size: inherit; float: none; }
+  .crono-desc strong { color: var(--accent); }
+
+  /* ─── DISTRICT MAP TABLE ─── */
+  .district-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 28px 0;
+  }
+  .district-card {
+    border: 1px solid var(--rule);
+    padding: 16px;
+    background: white;
+  }
+  .district-card .loc-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .district-card .loc-concession {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .district-card .loc-type {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 8.5px;
+    padding: 2px 7px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .loc-exp { background: #e8f0fe; color: #1a3a8f; }
+  .loc-expl { background: #fce4ec; color: #880e4f; }
+  .loc-new { background: #fff9c4; color: #5d4037; border: 1px dashed #f9a825; }
+
+  /* ─── SOURCES ─── */
+  .sources {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 40px;
+    margin-top: 60px;
+  }
+  .sources h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+  }
+  .source-item {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+  .source-num {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: var(--gold);
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .source-info {}
+  .source-title {
+    color: var(--paper);
+    font-style: italic;
+  }
+  .source-meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: #888;
+    margin-top: 3px;
+    display: block;
+  }
+  .source-url {
+    color: var(--gold-light);
+    font-size: 9px;
+    display: block;
+    word-break: break-all;
+    margin-top: 2px;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  .source-url:hover { opacity: 1; text-decoration: underline; }
+
+  /* ─── FOOTER ─── */
+  .footer {
+    text-align: center;
+    padding: 24px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-top: 1px solid var(--rule);
+    margin-top: 60px;
+  }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    .timeline::before { left: 70px; }
+    .tl-date { width: 62px; font-size: 9px; }
+    .crono-item { grid-template-columns: 90px 60px 1fr; }
+    .crono-period, .crono-stage { font-size: 8px; }
+    .sources { padding: 24px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="pub-name">Análisis · Minería &amp; Mercados · Chile</div>
+  <div class="date-line">Santiago, 9 de abril de 2026 &nbsp;·&nbsp; Edición Especial de Investigación</div>
+</header>
+
+<!-- HERO -->
+<div class="wrapper">
+  <div class="hero">
+    <span class="kicker">Investigación financiera · Tierras raras · Biobío</span>
+    <h1>Lo que brilla debajo de la arcilla hace palidecer a las comunidades: cómo una historia bien contada disparó en un 852% una acción minera de tierras raras en el Biobío</h1>
+    <p class="deck">Una empresa canadiense-estadounidense listada en Nueva York, una familia constructora del sur de Chile, un geólogo con visión de distrito y los minerales más codiciados del planeta. La historia financiera, territorial y política detrás del Proyecto NeoRe de tierras raras que hoy incomoda a las comunidades costeras del Biobío, Ñuble y Maule y a la vez seduce al Gobierno actual y empresas mineras.</p>
+    <div class="byline-row">
+      <span>Análisis editorial</span>
+      <span>Basado en fuentes verificadas</span>
+      <span>COBA (OTCQB: Chilean Cobalt Corp.)</span>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="wrapper">
+<div class="article-body">
+
+<!-- INTRO / GANCHO -->
+<p>Hay historias que se cuentan antes de que los hechos las terminen de escribir. Esta es una de ellas. El título de este reportaje y su gancho apuntan directo a lo que ocurrió en el mercado bursátil entre septiembre de 2025 y marzo de 2026: la acción de Chilean Cobalt Corp. (símbolo COBA en el mercado extrabursátil estadounidense OTCQB) pasó de cotizar cerca de centavos de dólar a alcanzar un máximo histórico de US$4,30, para luego estabilizarse en torno a US$2,00. Ese viaje, que representó un rendimiento de 852% en apenas seis meses y de 329% en un año, no fue impulsado por ventas, ni por utilidades, ni por un yacimiento con reservas probadas. Fue impulsado, en gran medida, por una narrativa: Chile tiene tierras raras, el mundo las necesita, Estados Unidos las quiere, y una pequeña empresa con conexiones en Washington llegó antes que nadie a reclamarlas. Entender ese mecanismo es entender también lo que está pasando hoy mismo bajo las arcillas del litoral del Biobío.</p>
+
+<p>Para el chileno de a pie, las "tierras raras" son una abstracción. Pero están en su celular, en su auto eléctrico, en los audífonos con cancelación de ruido, en los aviones de combate, en los reactores de fusión y —según los expertos— en prácticamente el 80% del equipamiento militar estadounidense. Durante décadas, China dominó casi la totalidad del suministro global de estos 17 elementos metálicos. Donald Trump llegó a la presidencia con la obsesión de cambiar eso, y ese contexto geopolítico fue el viento que infló las velas de esta pequeña empresa minera listada en una bolsa de baja capitalización, con sede en Berwyn, Pensilvania, y operaciones en el sur de Chile.</p>
+
+<div class="stat-row">
+  <div class="stat-item">
+    <span class="stat-num green">+852%</span>
+    <span class="stat-label">Retorno en 6 meses</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num green">+329%</span>
+    <span class="stat-label">Retorno en 1 año</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">$2,00</span>
+    <span class="stat-label">Precio actual (USD)</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num">$4,30</span>
+    <span class="stat-label">Máximo 52 semanas</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num danger">-18,7%</span>
+    <span class="stat-label">Caída YTD 2026</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-num danger">-$0,07</span>
+    <span class="stat-label">EPS (sin ingresos)</span>
+  </div>
+</div>
+
+<!-- SECCIÓN 1: QUÉ SIGNIFICA LA SUBIDA BURSÁTIL -->
+<div class="section-title">¿Qué le dice ese 852% al ciudadano común?</div>
+
+<p>Antes de entrar al terreno de Cobquecura o a los sondajes en la costa biobiana, conviene detenerse en la anatomía financiera de esa subida extraordinaria. Chilean Cobalt Corp. no tiene ingresos. Sus estados financieros muestran pérdidas de 7 centavos de dólar por acción en los últimos doce meses. Su ratio corriente —que mide cuántos activos líquidos tiene por cada peso que debe en el corto plazo— es de 56,4, lo que indica que tiene mucho efectivo en caja respecto a sus deudas inmediatas. Eso, paradójicamente, es una fortaleza para una empresa en etapa de exploración: significa que tiene dinero para seguir perforando sin necesitar urgentemente más capital.</p>
+
+<p>Pero entonces, ¿por qué subió tanto? Porque el mercado de pequeñas mineras exploradoras —las llamadas "junior miners" en el argot bursátil— funciona de una manera muy distinta al mercado de empresas como Apple o Coca-Cola. En estas compañías, el precio de la acción sube o baja principalmente en función de noticias sobre recursos: ¿cuánto mineral hay bajo tierra?, ¿a qué profundidad?, ¿a qué concentración? Pero aún antes de responder esas preguntas técnicas, el mercado premia algo más inmediato: el acceso. La promesa de estar en el lugar correcto en el momento correcto.</p>
+
+<p>Entre septiembre de 2025 y marzo de 2026, varias noticias convergieron para crear ese escenario perfecto para COBA. Primero, Trump anunció el llamado "Project Vault", un plan de US$12.000 millones destinado a crear una reserva estratégica de minerales críticos y romper la dependencia de la cadena de suministro china. Segundo, la nueva administración del presidente José Antonio Kast en Chile firmó una declaración conjunta con Estados Unidos para impulsar la cooperación en minerales críticos. Tercero, Chilean Cobalt anunció, el 14 de enero de 2026, un acuerdo vinculante de earn-in y opción de compra sobre el proyecto NeoRe en el Biobío. Cuarto, surgieron informaciones de que la empresa ya había tenido reuniones directas con el embajador estadounidense Brandon Judd en Santiago. Todo eso junto, en un mercado global sediento de alternativas a China, hizo que los especuladores y algunos fondos pequeños apretaran el acelerador sobre COBA.</p>
+
+<div class="warn-box">
+  <span class="label">⚠ Alerta al lector / contexto financiero esencial</span>
+  <p>La caída de 18,7% en lo que va del año 2026, desde el máximo de US$4,30 hasta los US$2,00 actuales, es igualmente reveladora. Cuando la narrativa no va acompañada de resultados concretos —recursos cuantificados, estudios de factibilidad, contratos de venta— el mercado corrige. La empresa sigue sin ingresos y su ratio de liquidez alto refleja que, hasta ahora, el dinero que tiene es el que invirtió o captó de accionistas, no el que ganó explotando minerales. Para un inversionista promedio chileno, conviene recordar que este tipo de activos son altamente especulativos: quien compró en el máximo de $4,30 perdió más del 50% de su inversión. Quien compró hace un año al precio mínimo, ganó más del triple.</p>
+</div>
+
+<!-- SECCIÓN 2: ORIGEN DE LA HISTORIA -->
+<div class="section-title">Del cobalto al norte al itrio en el sur: cómo nació todo</div>
+
+<p>Chilean Cobalt Corp. no nació pensando en las tierras raras del Biobío. Su nombre lo dice todo: cobalt, cobalto. La empresa fue fundada con la misión de explorar sus proyectos La Cobaltera y El Cofre, en la Región de Atacama, al norte de Chile, considerados uno de los pocos distritos de cobalto primario en el mundo. El cobalto es indispensable para las baterías de litio que alimentan vehículos eléctricos, y durante años fue la apuesta central de la firma.</p>
+
+<p>El giro hacia el sur ocurrió a través de una cadena de contactos universitarios y financieros. Todd Huckaby, socio fundador del banco de inversión Hudson Bankers, estudió en la Samford University en Alabama, la misma casa de estudios de Duncan T. Blount, presidente y CEO de Chilean Cobalt. Huckaby conocía a la familia Sáenz, constructores del sur de Chile, fundadores de la empresa Madesal y partícipes del holding de salud Andes Salud junto a los Imschenetzky. Un amigo en común en Nueva York hizo la presentación definitiva. El primer correo entre los potenciales socios se envió en mayo de 2025.</p>
+
+<p>La familia Sáenz no llegaba con las manos vacías. Ya habían explorado el mundo de las tierras raras en sus propiedades cercanas a la costa del Biobío mediante una alianza previa con la empresa Biolantánicos, que llegó a instalar una planta piloto en sus terrenos. Esa alianza no prosperó, pero dejó un aprendizaje y una infraestructura de datos geológicos. Con esa base, la familia creó NeoRe SpA para gestionar de manera independiente su apuesta en este sector. Cuando Chilean Cobalt llegó, ya existía una empresa chilena formada, con terrenos de más de 5.000 hectáreas de arcillas iónicas en la franja costera, y con estudios preliminares que apuntaban a concentraciones relevantes de elementos de tierras raras.</p>
+
+<p>En diciembre de 2025, la familia Sáenz, a través de Madesal, concretó una inversión de US$3 millones en una ronda que también contó con la participación de Glencore, el gigante suizo de los commodities. Esa sola señal —que Glencore pusiera dinero— fue suficiente para que el mercado levantara las antenas. Luego vino el acuerdo formal del 14 de enero de 2026, y con él, la primera gran ola alcista en la acción COBA.</p>
+
+<div class="pull-quote">
+  <p>El valor del itrio se multiplicó casi 70 veces en el último año, reflejando la fragilidad de las cadenas de suministro occidentales.</p>
+  <span class="attribution">Fernando Sáenz · Familia fundadora de Madesal y NeoRe SpA</span>
+</div>
+
+<!-- SECCIÓN 3: LOS MINERALES Y EL CONTEXTO GLOBAL -->
+<div class="section-title">¿Por qué el mundo quiere estas arcillas del Biobío?</div>
+
+<p>Hablar de "tierras raras" puede sonar a ciencia ficción, pero estos metales tienen nombres cotidianos en la industria tecnológica: neodimio, praseodimio, disprosio, terbio, itrio. El neodimio y el praseodimio forman imanes permanentes que hacen girar los motores de autos eléctricos y generadores eólicos. El disprosio y el terbio permiten que esos imanes funcionen a alta temperatura sin perder potencia. El itrio entra en pantallas, láseres y superconductores. Sin ellos, la transición energética global simplemente no ocurre.</p>
+
+<p>China controla entre el 60% y el 85% de la producción y el procesamiento mundial de estas tierras raras, según distintas fuentes de la industria. En el actual contexto de tensión comercial entre Washington y Beijing, esa dependencia se ha vuelto estratégicamente insoportable para Estados Unidos. El "Project Vault" de Trump —un fondo de US$12.000 millones para crear una reserva nacional de minerales críticos— es la respuesta política más directa a esa vulnerabilidad. Y dentro de ese esquema, las empresas que operan fuera de la órbita china, en países aliados o amigables como Chile, reciben una atención especial de Washington.</p>
+
+<p>Los resultados que NeoRe ha publicado hasta ahora son preliminares pero estimulantes para el sector: interceptos de hasta 535 partes por millón de Elementos de Tierras Raras Totales (TREE, por su sigla en inglés), con concentraciones promedio de 358 ppm en las áreas exploradas. Para contextualizar: los depósitos de arcillas iónicas que se explotan en China tienen concentraciones típicas de entre 200 y 2.000 ppm. El Biobío está en el rango bajo de esa escala, pero su composición elemental —con un 28% de neodimio/praseodimio, un 20% de itrio y un 4,5% de disprosio/terbio— resulta especialmente atractiva porque prioriza los elementos de mayor demanda y valor.</p>
+
+<!-- SECCIÓN 4: EL DISTRITO Y SUS CONCESIONES -->
+<div class="section-title">El "distrito" de NeoRe: un mosaico de concesiones en el litoral</div>
+
+<p>Arturo Albornoz, CEO de NeoRe SpA, usa con frecuencia la palabra "distrito" para describir el conjunto de concesiones mineras que conforman la cartera territorial del proyecto. No es un término casual. En minería, un "distrito" implica que el potencial geológico no está limitado a un solo punto sino que se extiende por una zona amplia, permitiendo desarrollar múltiples unidades de explotación bajo una misma estrategia. Para una empresa junior que necesita demostrar valor al mercado, la idea de distrito es especialmente poderosa: si un área específica no cumple las expectativas, se puede avanzar con otra dentro del mismo sistema geológico.</p>
+
+<p>La cartera territorial que NeoRe ha ido consolidando a lo largo de 2025 y 2026 comprende varias áreas geográficas, cada una con sus propias concesiones de exploración o explotación:</p>
+
+<div class="district-grid">
+  <div class="district-card">
+    <div class="loc-name">Cobquecura</div>
+    <span class="loc-concession">Concesiones ROSITA y LOURDES</span>
+    <p style="font-size:0.82rem;color:#555;line-height:1.4;">Núcleo original del "Distrito Margen". Primera área en ser evaluada. Arcillas iónicas en franja costera.</p>
+    <span class="loc-type loc-exp">Exploración</span>
+  </div>
+  <div class="district-card">
+    <div class="loc-name">Chanco</div>
+    <span class="loc-concession">Concesiones en evaluación</span>
+    <p style="font-size:0.82rem;color:#555;line-height:1.4;">Zona norte del distrito. Parte del cinturón geológico de arcillas iónicas identificado.</p>
+    <span class="loc-type loc-exp">Exploración</span>
+  </div>
+  <div class="district-card">
+    <div class="loc-name">Curepto</div>
+    <span class="loc-concession">Concesiones en evaluación</span>
+    <p style="font-size:0.82rem;color:#555;line-height:1.4;">Sur del sistema. La diversidad de concesiones en distintas comunas permite movilidad estratégica.</p>
+    <span class="loc-type loc-exp">Exploración</span>
+  </div>
+  <div class="district-card">
+    <div class="loc-name">Santa Juana</div>
+    <span class="loc-concession">Pedimentos publicados 17/03/2026</span>
+    <p style="font-size:0.82rem;color:#555;line-height:1.4;">Nuevas solicitudes de NeoRe SpA. Publicadas en Boletín Minero Nº44402 del 17 de marzo de 2026.</p>
+    <span class="loc-type loc-new">⏳ 30 días para oposición</span>
+  </div>
+  <div class="district-card">
+    <div class="loc-name">Coronel</div>
+    <span class="loc-concession">Pedimentos publicados 17/03/2026</span>
+    <p style="font-size:0.82rem;color:#555;line-height:1.4;">Nuevas solicitudes de NeoRe SpA y Madesal. Misma edición del Boletín Minero.</p>
+    <span class="loc-type loc-new">⏳ 30 días para oposición</span>
+  </div>
+  <div class="district-card">
+    <div class="loc-name">Penco / Landa (Camino)</div>
+    <span class="loc-concession">LANDA 1, LANDA 2 y LANDA 4</span>
+    <p style="font-size:0.82rem;color:#555;line-height:1.4;">Concesiones de <em>explotación</em> a nombre de Madesal. Hipótesis: candidato al prototipo MEP-1 "Esperanza 7".</p>
+    <span class="loc-type loc-expl">Explotación · Madesal</span>
+  </div>
+</div>
+
+<div class="info-box">
+  <span class="label">📋 Alerta ciudadana · Boletín Minero Nº 44402 · 17 de marzo de 2026</span>
+  <p>El 17 de marzo de 2026, el Boletín Oficial de Minería de Chile publicó en su edición Nº 44402 nuevas solicitudes de concesiones mineras —denominadas "pedimentos"— a nombre de NeoRe SpA y Madesal, correspondientes a terrenos en las comunas de Santa Juana y Coronel. La publicación en el Boletín activa un plazo de <strong>30 días hábiles</strong> para que los particulares, municipalidades u organizaciones comunitarias de esas comunas presenten oposición formal ante el Juzgado de Letras respectivo. Este plazo tiene implicancias críticas: sin concesiones mineras de exploración vigentes, la empresa no puede realizar sondajes en esos terrenos, y sin sondajes, no puede obtener los datos técnicos que necesita para conseguir financiamiento internacional.</p>
+  <p>En otras palabras, el reloj corre tanto en el laboratorio como en los tribunales. Las comunidades de Santa Juana y Coronel tienen una ventana legal acotada para informarse, organizarse y ejercer ese derecho de oposición si así lo estiman conveniente.</p>
+</div>
+
+<!-- SECCIÓN 5: EARN-IN Y ESTRUCTURA FINANCIERA -->
+<div class="section-title">Cómo funciona un earn-in: el idioma financiero que define quién es dueño de qué</div>
+
+<p>El acuerdo firmado el 14 de enero de 2026 entre Chilean Cobalt y NeoRe SpA sigue una estructura estándar en la industria minera exploratoria: el llamado "earn-in con opción de compra". Para quien no esté familiarizado con el mundo de las finanzas mineras, vale la pena detenerse aquí.</p>
+
+<p>Un earn-in (literalmente, "ganar entrando") funciona así: la empresa extranjera —en este caso Chilean Cobalt— no compra el proyecto de inmediato. En cambio, se compromete a invertir una suma de dinero en hitos técnicos definidos. Si cumple el Tramo 1, gana derechos menores (en este caso, un 1% de NSR, que significa 1% sobre los ingresos netos futuros de la fundición). Si cumple el Tramo 2, que incluye preparar una estimación de recursos verificada por terceros, pruebas metalúrgicas y un estudio económico preliminar, avanza hacia la opción de compra definitiva. Si se ejercita esa opción —pagar el precio pactado— se adquiere el 100% de NeoRe SpA. El precio acordado: 6.000.000 de acciones comunes de Chilean Cobalt Corp. No es dinero en efectivo; son acciones. Eso significa que la familia Sáenz recibiría participación en la empresa cotizante, apostando así a que el valor de COBA seguirá subiendo.</p>
+
+<span class="table-title">→ Estructura del earn-in y hitos técnicos de NeoRe</span>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th class="gold">Tramo</th>
+      <th class="gold">Compromiso de Chilean Cobalt</th>
+      <th class="gold">Derecho obtenido</th>
+      <th class="gold">Estado (Abril 2026)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="mono">Tramo 1</td>
+      <td>Compilación geológica, modelo preliminar, evaluación de continuidad mineral. Perforación inicial.</td>
+      <td>1% NSR (sobre ingresos netos de fundición futuros)</td>
+      <td class="up">✓ En ejecución activa</td>
+    </tr>
+    <tr>
+      <td class="mono">Tramo 2</td>
+      <td>Estimación de recursos verificada por terceros + pruebas metalúrgicas + estudio económico preliminar (scoping).</td>
+      <td>Derecho de ejercer Opción de Compra</td>
+      <td>⏳ Próxima etapa (post julio 2026)</td>
+    </tr>
+    <tr>
+      <td class="mono">Opción de Compra</td>
+      <td>Pago de 6.000.000 acciones COBA a NeoRe / Sáenz</td>
+      <td>100% de NeoRe SpA</td>
+      <td>📋 Sujeto a cumplir Tramos 1 y 2</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECCIÓN 6: LA ESTRATEGIA MODULAR DE ALBORNOZ -->
+<div class="section-title">La filosofía del distrito modular: cómo Albornoz apuesta a la flexibilidad como ventaja</div>
+
+<p>En su perfil de LinkedIn, Arturo Albornoz —el ingeniero chileno que lidera NeoRe SpA— repite con consistencia una idea que diferencia a este proyecto de otras iniciativas mineras más convencionales: la modularidad. La lógica es sencilla pero poderosa. En lugar de apostar todo a un único yacimiento y construir una planta de procesamiento gigante que tome décadas y miles de millones de dólares en financiarse, NeoRe plantea instalar Plantas de Extracción Modulares (MEP, por su sigla en inglés) de tamaño reducido, conectadas a concesiones específicas dentro del distrito.</p>
+
+<p>La primera de estas plantas —llamada MEP-1— ya tiene un candidato de ubicación identificado: el objetivo Esperanza 7. Sin embargo, hay una hipótesis que merece atención: las concesiones de explotación de Madesal en el sector de Landa (Landa 1, Landa 2 y Landa 4), ubicadas en el camino a Penco, podrían constituir el sitio preferido para instalar ese primer prototipo. Estas concesiones son de explotación —no solo de exploración—, lo que las pone un escalón más adelante en términos de derechos mineros, ya que permiten extraer material, no solo sondear. Chilean Cobalt hace referencia a este objetivo precisamente como "Esperanza 7", sin entrar en detalle sobre cuáles concesiones lo sustentan, lo que sugiere que Landa sería el terreno más concreto para esa primera instalación modular.</p>
+
+<p>La ventaja de la modularidad es doble. Por un lado, reduce dramáticamente el capital inicial necesario: en lugar de construir toda la infraestructura de golpe, se puede comenzar con una pequeña planta piloto, generar los primeros gramos de producción, y con esos ingresos —por modestos que sean— demostrar al mercado que el proyecto funciona. Por otro lado, si una concesión específica decepciona geológicamente, la empresa puede redirigir la producción a otra concesión dentro del mismo distrito sin tener que abandonar el proyecto entero. Es la diferencia entre poner todos los huevos en una canasta versus tener seis canastas distintas disponibles.</p>
+
+<div class="pull-quote">
+  <p>Nuestro objetivo en NeoRe no es solo avanzar en objetivos de exploración individuales, sino también definir y desarrollar un nuevo distrito de tierras raras en el sur de Chile.</p>
+  <span class="attribution">Arturo Albornoz · CEO de NeoRe SpA · LinkedIn, marzo 2026</span>
+</div>
+
+<!-- SECCIÓN 7: CRONOGRAMA -->
+<div class="section-title">Cronograma del proyecto: del sondaje a la primera producción</div>
+
+<div class="crono-grid">
+  <div class="crono-header">CRONOGRAMA ESTIMADO · PROYECTO NEORE · CHILEAN COBALT CORP.</div>
+
+  <div class="crono-item">
+    <div class="crono-period">May – Dic 2025</div>
+    <div class="crono-stage">Gestación</div>
+    <div class="crono-desc"><strong>Primer contacto y due diligence.</strong> Contacto entre Chilean Cobalt y familia Sáenz via Todd Huckaby. Visita a terreno. Inversión de US$3M por Madesal en ronda compartida con Glencore (diciembre 2025). NeoRe SpA constituida. Reclutamiento del equipo de geología.</div>
+  </div>
+
+  <div class="crono-item">
+    <div class="crono-period">Ene 2026</div>
+    <div class="crono-stage">Acuerdo</div>
+    <div class="crono-desc"><strong>Firma del earn-in (14 enero 2026).</strong> Ampliación de área de concesiones en ~1.500 ha hasta casi 5.750 ha totales. Primeras muestras superficiales sobre 500 ppm en nuevas áreas. Primer traspaso de fondos de Chilean Cobalt a NeoRe.</div>
+  </div>
+
+  <div class="crono-item">
+    <div class="crono-period">Feb 2026</div>
+    <div class="crono-stage">Fase 1</div>
+    <div class="crono-desc"><strong>Inicio formal del Tramo 1 (11 feb 2026).</strong> 60 metros perforados en inicio de campaña. Muestras superficiales en nuevas áreas retornan sobre 500 ppm. Formación legal de REES (plataforma de investigación con Universidad de Concepción). CORFO adjudica ~US$4M para pilotaje de tecnologías de separación.</div>
+  </div>
+
+  <div class="crono-item">
+    <div class="crono-period">Mar 2026</div>
+    <div class="crono-stage">Exploración</div>
+    <div class="crono-desc"><strong>192 metros acumulados.</strong> Resultados de hasta 1.060 ppm TREE. Muestras superficiales sobre 800 ppm. Solicitud de 7 nuevas concesiones (~2.100 ha adicionales). Publicación en Boletín Minero Nº44402 (17 mar) de pedimentos en Santa Juana y Coronel: <strong>30 días hábiles para oposición comunitaria.</strong></div>
+  </div>
+
+  <div class="crono-item">
+    <div class="crono-period">Abr 2026</div>
+    <div class="crono-stage">Pre-factib.</div>
+    <div class="crono-desc"><strong>426 metros perforados. Esperanza 7 como candidato a MEP-1.</strong> 8 de 24 objetivos evaluados. ~200 muestras en análisis ICP-OES. Inicio de planta piloto con UdeC. Selección de consultoría ambiental para tramitar permisos del MEP-1 ante el SEA. Selección de una de cinco alternativas de planta de procesamiento para avanzar a ingeniería. Reportes de resultados financieros el 9 de abril.</div>
+  </div>
+
+  <div class="crono-item">
+    <div class="crono-period">May – Jul 2026</div>
+    <div class="crono-stage">Intensifi.</div>
+    <div class="crono-desc"><strong>Objetivo: completar Tramo 1 antes de julio 2026.</strong> Despliegue de hasta 3 equipos de perforación simultáneos. Campaña de más de 25 nuevos sondajes en Esperanza 7. Contratos de acceso superficial con propietarios. Inicio de definición formal de recursos. Evaluación de socios estratégicos en EE.UU. para acuerdos de procesamiento y compra (offtake).</div>
+  </div>
+
+  <div class="crono-item">
+    <div class="crono-period">2do Sem. 2026</div>
+    <div class="crono-stage">Tramo 2</div>
+    <div class="crono-desc"><strong>Estimación de recursos verificada por terceros.</strong> Pruebas metalúrgicas avanzadas (proceso patentable de arcillas iónicas). Estudio económico preliminar (scoping). Gestión de permiso ambiental DGA y SEA para MEP-1. Inicio de proceso de financiamiento con socios internacionales.</div>
+  </div>
+
+  <div class="crono-item">
+    <div class="crono-period">2027 (Proj.)</div>
+    <div class="crono-stage">Producción</div>
+    <div class="crono-desc"><strong>Primera producción estimada: ~12 meses desde abril 2026.</strong> Instalación de MEP-1 en Esperanza 7/Landa. Primeras ventas a mercado norteamericano (socios en proceso de negociación, incluyendo ReElement Technologies). Eventual ejercicio de opción de compra (6M acciones COBA a familia Sáenz). Expansión modular a otros objetivos del distrito.</div>
+  </div>
+</div>
+
+<!-- SECCIÓN 8: ALIANZAS ESTRATÉGICAS -->
+<div class="section-title">La cadena de alianzas: de la Universidad de Concepción a la Casa Blanca</div>
+
+<p>Uno de los aspectos más llamativos de la arquitectura de NeoRe es cómo ha construido, en menos de un año, una red de alianzas que conecta lo local con lo global. En el plano académico, la Universidad de Concepción es el ancla central: a través de REES (Rare Earth Engineering & Science Corporation), la casa de estudios se convierte en el laboratorio donde se valida y escala el proceso de extracción de tierras raras de arcillas iónicas, una tecnología que NeoRe evalúa patentar. La UdeC no solo aporta infraestructura científica; su participación da legitimidad institucional al proceso y facilita futuros permisos ambientales.</p>
+
+<p>En el plano comercial, la alianza con ReElement Technologies es la que más llama la atención. ReElement es una empresa especializada en la separación avanzada de tierras raras pesadas, y hace parte de un ecosistema industrial junto a Vulcan Elements y American Resources Corporation, que anunció recientemente una asociación por US$1.400 millones respaldada por el gobierno estadounidense. Que NeoRe ya tenga un acuerdo con ReElement implica que, teóricamente, el camino desde la arcilla del Biobío hasta los imanes de los motores eléctricos en Estados Unidos ya tiene un intermediario definido. Eso no garantiza nada en términos de producción, pero sí envía una señal potente a Wall Street.</p>
+
+<p>En el plano político y diplomático, la foto tomada a fines de enero de 2026 en la Embajada de Estados Unidos en Santiago —donde aparecen Duncan Blount y Lawrence Snee de Chilean Cobalt junto al embajador Brandon Judd— fue circulada activamente en los círculos de la industria. El embajador Judd, señalan fuentes del sector, tiene como prioridad número uno apoyar a las empresas estadounidenses en Chile. En ese contexto, NeoRe encaja perfectamente: es una empresa que planea exportar tierras raras chilenas hacia el mercado norteamericano, reduciendo la dependencia de China, exactamente lo que la política industrial de Trump necesita mostrar como resultado.</p>
+
+<!-- SECCIÓN 9: EL RIESGO COMUNITARIO -->
+<div class="section-title">Lo que aún no está escrito: el territorio y sus comunidades</div>
+
+<p>Toda esta arquitectura financiera, diplomática y técnica descansa, en última instancia, sobre el suelo de comunas costeras del Biobío. Cobquecura, Santa Juana, Coronel, Penco: son comunas con identidades propias, actividades económicas consolidadas —pesca artesanal, agricultura, turismo, industria forestal— y comunidades que no necesariamente tienen información sobre lo que está ocurriendo bajo sus pies, o en los tribunales de minería.</p>
+
+<p>La publicación en el Boletín Minero del 17 de marzo de 2026 es el hito que convierte este asunto en un tema de interés ciudadano directo. Las solicitudes de concesiones mineras en Santa Juana y Coronel, a nombre de NeoRe SpA y Madesal, no son solo trámites administrativos: son el eslabón crítico de toda la cadena. Sin concesiones aprobadas, no hay sondajes. Sin sondajes, no hay datos técnicos. Sin datos técnicos, no hay estimación de recursos. Sin estimación de recursos, no hay financiamiento internacional. Sin financiamiento, no hay MEP-1. Sin MEP-1, no hay primera producción. La cadena de causalidad es inescapable.</p>
+
+<p>El paralelismo con el proyecto de la empresa Aclara en Penco —otro proyecto de tierras raras en la Región del Biobío que lleva años atrapado en el proceso de evaluación ambiental del SEA— es una referencia obligada. Aclara presentó una Adenda Excepcional antes del 30 de abril de 2026 para responder a observaciones técnicas acumuladas durante su proceso de permiso. El hecho de que NeoRe ya haya seleccionado una consultoría ambiental especializada para gestionar su proceso ante el SEA, y que esté trabajando en una planta piloto universitaria para fortalecer sus argumentos técnicos, sugiere que la empresa ha aprendido del camino largo y tortuoso de su predecesora en la región.</p>
+
+<span class="table-title">→ Comparación: Proyectos de tierras raras en Biobío</span>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th class="gold">Criterio</th>
+      <th class="gold">NeoRe / Chilean Cobalt</th>
+      <th class="gold">Aclara (Penco)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Empresa operadora</td>
+      <td>NeoRe SpA (familia Sáenz + Chilean Cobalt Corp.)</td>
+      <td>Aclara Resources (subsidiaria de Hochschild Mining)</td>
+    </tr>
+    <tr>
+      <td>Etapa actual</td>
+      <td>Exploración / Pre-factibilidad (Tramo 1 earn-in)</td>
+      <td>Evaluación Ambiental avanzada (SEA)</td>
+    </tr>
+    <tr>
+      <td>Tecnología</td>
+      <td>Arcillas iónicas · proceso patentable · lixiviación in situ</td>
+      <td>Arcillas iónicas · proceso con solventes</td>
+    </tr>
+    <tr>
+      <td>Alianza académica</td>
+      <td>Universidad de Concepción (REES + planta piloto)</td>
+      <td>No reportada públicamente</td>
+    </tr>
+    <tr>
+      <td>Concesiones actuales</td>
+      <td>~5.750 ha + nuevos pedimentos en Santa Juana/Coronel</td>
+      <td>Área definida en Penco (proceso de permiso avanzado)</td>
+    </tr>
+    <tr>
+      <td>Mercado objetivo</td>
+      <td>Estados Unidos (ReElement Technologies)</td>
+      <td>No declarado públicamente</td>
+    </tr>
+    <tr>
+      <td>Respaldo político</td>
+      <td>Embajada EEUU, "Project Vault", acuerdo Kast-Trump</td>
+      <td>Proceso interno chileno</td>
+    </tr>
+    <tr>
+      <td>Primera producción proyectada</td>
+      <td>~12 meses desde abril 2026 (meta ambiciosa)</td>
+      <td>Sin fecha definida (permiso pendiente)</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- SECCIÓN 10: EL CICLO FINANCIERO EXPLICADO -->
+<div class="section-title">La lógica de los mercados junior: por qué el relato vale antes que el mineral</div>
+
+<p>Para terminar de entender el movimiento financiero de COBA, conviene entender cómo funciona el ecosistema de las "junior miners" —pequeñas mineras exploradoras que cotizan en mercados extrabursátiles como el OTCQB estadounidense. Estas empresas operan en un ciclo que tiene cuatro fases bien definidas, y que explica tanto la euforia como la corrección que hemos visto en los últimos meses.</p>
+
+<p>La primera fase es la del "relato fundacional": la empresa anuncia que tiene acceso a un recurso estratégico en un lugar relevante. En este caso, arcillas iónicas con tierras raras en Chile, en el contexto de la guerra comercial sino-americana. El precio de la acción sube porque los especuladores apostan a que el relato se hará realidad. La segunda fase es la de "validación preliminar": la empresa perfora, obtiene resultados que muestran mineralización real, y los anuncia al mercado. Cada comunicado de prensa con datos de ppm es un hito que el mercado premia. La tercera fase, la más crítica, es la de "definición de recursos": una firma independiente certifica cuántas toneladas de mineral existen, a qué ley promedio, con qué nivel de confianza. Es aquí donde muchos proyectos se caen, porque la realidad rara vez coincide con las expectativas del relato inicial. La cuarta fase es la de "financiamiento y construcción", que en el caso de NeoRe correspondería a la instalación del MEP-1.</p>
+
+<p>Hoy, COBA está a caballo entre la fase 1 y la fase 2. Ha perforado 426 metros con resultados alentadores pero todavía no tiene una estimación de recursos certificada. Eso explica la corrección del -18,7% en lo que va del año: el mercado compró la historia, luego esperó confirmación técnica rápida, y al no llegar de inmediato, parte de los especuladores de corto plazo salió. Los inversionistas de largo plazo, que apostan a la fase 3 y 4, son los que mantienen el precio en los US$2,00 actuales. La empresa tiene una liquidez sólida (ratio corriente de 56,4) que le permite seguir trabajando sin presión inmediata de refinanciamiento. Eso la pone en una posición razonablemente cómoda para completar el Tramo 1 antes de julio de 2026.</p>
+
+<div class="ornament">— ✦ —</div>
+
+<div class="info-box">
+  <span class="label">🔍 Síntesis del análisis · Lo que sí sabemos y lo que aún no</span>
+  <p><strong>Lo que sí sabemos:</strong> Chilean Cobalt Corp. tiene un acuerdo real y vinculante sobre un proyecto real en el Biobío. Hay perforaciones físicas ocurriendo en terreno. La empresa tiene respaldo de una parte del gobierno de EE.UU. Los resultados geológicos preliminares son consistentes con depósitos de arcillas iónicas de interés. La familia Sáenz —dueña de los terrenos— es un actor con historia en Chile y recursos propios. La Universidad de Concepción es un socio académico con credibilidad.</p>
+  <p><strong>Lo que aún no sabemos:</strong> Si la concentración promedio de 358 ppm TREE es suficiente para hacer viable un proyecto rentable. Si las comunidades de Santa Juana y Coronel presentarán oposiciones a las nuevas concesiones. Si el proceso ambiental ante el SEA será expedito o prolongado. Si ReElement Technologies concretará el acuerdo de compra de producción. Si la estimación de recursos certificada (Tramo 2) confirmará el potencial o lo moderará. Y si los US$2,00 actuales de la acción son el piso de un nuevo ciclo alcista o el principio de una corrección más profunda.</p>
+</div>
+
+</div><!-- /article-body -->
+</div><!-- /wrapper -->
+
+<!-- FUENTES -->
+<div class="sources">
+<div class="wrapper">
+  <h2>Fuentes consultadas — Ordenadas de la más reciente a la más antigua</h2>
+
+  <div class="source-item">
+    <span class="source-num">[01]</span>
+    <div class="source-info">
+      <span class="source-title">Chilean Cobalt avanza perforación de proyecto de tierras raras en Chile</span>
+      <span class="source-meta">Investing.com MX · Publicado: 8 de abril de 2026 · Noticias de empresas</span>
+      <a class="source-url" href="https://mx.investing.com/news/company-news/chilean-cobalt-avanza-perforacion-de-proyecto-de-tierras-raras-en-chile-93CH-3556129" target="_blank">https://mx.investing.com/news/company-news/chilean-cobalt-avanza-perforacion...</a>
+      <span class="source-meta" style="color:#aaa;">Datos bursátiles de COBA: precio, retornos 852%/329%, máximo 52 semanas, caída YTD. Resumen en español de comunicado de prensa oficial.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[02]</span>
+    <div class="source-info">
+      <span class="source-title">Chilean Cobalt Corp. Continues Accelerated Drilling, Defines Initial Development Target, and Advances Engineering at NeoRe Rare Earth Project</span>
+      <span class="source-meta">Yahoo Finance / ACCESS Newswire · Publicado: 8 de abril de 2026</span>
+      <a class="source-url" href="https://finance.yahoo.com/sectors/energy/articles/chilean-cobalt-corp-continues-accelerated-130000081.html" target="_blank">https://finance.yahoo.com/sectors/energy/articles/chilean-cobalt-corp-continues-accelerated-130000081.html</a>
+      <span class="source-meta" style="color:#aaa;">Comunicado oficial de prensa completo: 426m perforados, resultados 535 ppm, Esperanza 7, MEP-1, 3 equipos de perforación, UdeC, consultoría ambiental, primera producción en 12 meses.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[03]</span>
+    <div class="source-info">
+      <span class="source-title">Proyecto de tierras raras de Chilean Cobalt en Biobío pasa a prefactibilidad y proyecta primera producción para 2027</span>
+      <span class="source-meta">Diario Financiero · Publicado: 8 de abril de 2026</span>
+      <a class="source-url" href="https://www.df.cl/regiones/biobio/empresas/proyecto-de-tierras-raras-de-chilean-cobalt-en-biobio-pasa-a" target="_blank">https://www.df.cl/regiones/biobio/empresas/proyecto-de-tierras-raras-de-chilean-cobalt-en-biobio-pasa-a</a>
+      <span class="source-meta" style="color:#aaa;">Cobertura en español del avance a prefactibilidad. Detalla yacimiento en terrenos de familia Sáenz (Madesal/Andes Salud), minerales contenidos, planta piloto UdeC.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[04]</span>
+    <div class="source-info">
+      <span class="source-title">Chilean Cobalt acelera perforaciones en Chile y define objetivo inicial de desarrollo en proyecto de tierras raras</span>
+      <span class="source-meta">Electrominería · Publicado: 8 de abril de 2026</span>
+      <a class="source-url" href="https://electromineria.cl/chilean-cobalt-acelera-perforaciones-chile-objetivo-desarrollo-tierras-raras/" target="_blank">https://electromineria.cl/chilean-cobalt-acelera-perforaciones-chile-objetivo-desarrollo-tierras-raras/</a>
+      <span class="source-meta" style="color:#aaa;">Cobertura técnica sectorial. Confirma 426m, 535 ppm TREE, Esperanza 7, planta piloto UdeC, proceso ambiental.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[05]</span>
+    <div class="source-info">
+      <span class="source-title">Chilean Cobalt Corp. advances rare earth project with initial development target</span>
+      <span class="source-meta">StreetInsider · Publicado: 8 de abril de 2026</span>
+      <a class="source-url" href="https://www.streetinsider.com/Corporate+News/Chilean+Cobalt+advances+rare+earth+project+with+initial+development+target/26287124.html" target="_blank">https://www.streetinsider.com/Corporate+News/Chilean+Cobalt+advances+rare+earth+project+with+initial+development+target/26287124.html</a>
+      <span class="source-meta" style="color:#aaa;">Síntesis para mercado bursátil anglosajón del comunicado oficial del 8 de abril.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[06]</span>
+    <div class="source-info">
+      <span class="source-title">Avanza nuevo proyecto de tierras raras en costa de Biobío: registra perforaciones en terreno</span>
+      <span class="source-meta">Diario Concepción · Publicado: 16 de marzo de 2026</span>
+      <a class="source-url" href="https://www.diarioconcepcion.cl/economia/2026/03/16/avanza-nuevo-proyecto-de-tierras-raras-en-costa-de-biobio-registra-perforaciones-en-terreno.html" target="_blank">https://www.diarioconcepcion.cl/economia/2026/03/16/avanza-nuevo-proyecto-de-tierras-raras-en-costa-de-biobio-registra-perforaciones-en-terreno.html</a>
+      <span class="source-meta" style="color:#aaa;">Primer reporte periodístico regional en español. 192m perforados, hasta 1.060 ppm TREE, 7 nuevas concesiones (~2.100 ha adicionales), muestras sobre 800 ppm, contexto político Chile-EEUU (declaración Kast).</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[07]</span>
+    <div class="source-info">
+      <span class="source-title">El proyecto de tierras raras que se incuba en Biobío para satisfacer a EEUU</span>
+      <span class="source-meta">Diario Financiero / DF MAS (Por Dentro) · Publicado: 7 de marzo de 2026</span>
+      <a class="source-url" href="https://www.df.cl/df-mas/por-dentro/el-proyecto-de-tierras-raras-que-se-incuba-en-biobio-para-satisfacer-a-eeuu" target="_blank">https://www.df.cl/df-mas/por-dentro/el-proyecto-de-tierras-raras-que-se-incuba-en-biobio-para-satisfacer-a-eeuu</a>
+      <span class="source-meta" style="color:#aaa;">Investigación de fondo. Foto en Embajada EEUU (enero 2026), origen del acuerdo vía Todd Huckaby, historia de la familia Sáenz y Madesal, inversión Glencore US$3M, acuerdo ReElement Technologies ($1.400M con respaldo EEUU), "Project Vault" de Trump (US$12B), perspectiva política Boric/Kast.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[08]</span>
+    <div class="source-info">
+      <span class="source-title">Chilean Cobalt Corp. Commences Earn-In Work Program at NeoRe Rare Earth Project in Southern Chile</span>
+      <span class="source-meta">Yahoo Finance / ACCESS Newswire · Publicado: 11 de febrero de 2026</span>
+      <a class="source-url" href="https://finance.yahoo.com/news/chilean-cobalt-corp-commences-earn-140000970.html" target="_blank">https://finance.yahoo.com/news/chilean-cobalt-corp-commences-earn-140000970.html</a>
+      <span class="source-meta" style="color:#aaa;">Comunicado oficial del inicio del Tramo 1. Detalles del earn-in: 1% NSR, Tramo 2, opción de compra (6M acciones). 60m perforados al inicio. Expansión a 5.750 ha. CORFO US$4M. Inicio actividades REES con UdeC.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[09]</span>
+    <div class="source-info">
+      <span class="source-title">Boletín Oficial de Minería de Chile — Edición Nº 44402</span>
+      <span class="source-meta">Servicio Nacional de Geología y Minería (SERNAGEOMIN) · Publicado: 17 de marzo de 2026</span>
+      <a class="source-url" href="https://www.boletinoficialdemineria.cl/?date=17-03-2026&edition=44402#" target="_blank">https://www.boletinoficialdemineria.cl/?date=17-03-2026&edition=44402#</a>
+      <span class="source-meta" style="color:#aaa;">Fuente oficial. Publicación de pedimentos de concesiones mineras en Santa Juana y Coronel a nombre de NeoRe SpA y Madesal. 30 días hábiles para oposición comunitaria desde su publicación.</span>
+    </div>
+  </div>
+
+  <div class="source-item">
+    <span class="source-num">[10]</span>
+    <div class="source-info">
+      <span class="source-title">LinkedIn — Arturo Albornoz Wegertseder (CEO de NeoRe SpA): publicación sobre continuación del programa de perforación acelerada</span>
+      <span class="source-meta">LinkedIn · Publicado: Marzo 2026</span>
+      <a class="source-url" href="https://www.linkedin.com/posts/arturo-albornoz-wegertseder-72435724_chilean-cobalt-corp-continues-accelerated-activity-7447642397980835841-B4Jf" target="_blank">https://www.linkedin.com/posts/arturo-albornoz-wegertseder-72435724_...B4Jf</a>
+      <span class="source-meta" style="color:#aaa;">Fuente primaria directa. Albornoz reitera filosofía de modularidad y desarrollo de distrito. Confirma estrategia de Plantas de Extracción Modulares (MEP) como eje del proyecto.</span>
+    </div>
+  </div>
+
+</div>
+</div><!-- /sources -->
+
+<div class="footer">
+  <div class="wrapper">
+    Análisis editorial basado en fuentes públicas verificadas · Abril 2026 · No constituye asesoría de inversión
+  </div>
+</div>
+
+</body>
+</html>
